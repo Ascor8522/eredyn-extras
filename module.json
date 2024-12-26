@@ -1,0 +1,29 @@
+{
+	"id": "eredyn-extras",
+	"title": "Eredyn Extras",
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "12",
+		"verified": "12"
+	},
+	"authors": [
+		{
+			"name": "Ascor8522",
+			"discord": "Ascor8522",
+			"flags": {}
+		}
+	],
+	"esmodules": [
+		"scripts/index.js"
+	],
+	"styles": [],
+	"relationships": {
+		"systems": [
+			{
+				"id": "dnd5e",
+				"type": "system",
+				"compatibility": {}
+			}
+		]
+	}
+}

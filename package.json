@@ -1,0 +1,17 @@
+{
+	"name": "eredyn-extras",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@league-of-foundry-developers/foundry-vtt-dnd5e-types": "^1.5.2-2",
+		"@league-of-foundry-developers/foundry-vtt-types": "^12.331.3-beta",
+		"tsup": "^8.3.5",
+		"typescript": "^5.7.2"
+	}
+}
