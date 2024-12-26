@@ -1,0 +1,91 @@
+.search-bar {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	align-items: center;
+
+	>input {
+		flex: 1;
+	}
+
+	div.view-mode {
+		display: inline-flex;
+		flex-direction: row;
+		gap: 0.5rem;
+
+		>button.icon {
+			display: inline-block;
+			width: auto;
+			padding: 3px;
+			min-width: 2rem;
+
+			&:not(.active) {
+				border: none;
+			}
+		}
+	}
+}
+
+.table-wrapper {
+	height: 350px;
+	overflow-y: auto;
+	scroll-snap-type: y mandatory;
+
+	table {
+		width: calc(100% - 2rem);
+		margin-block: 0;
+
+		thead {
+			tr {
+				th {
+					position: sticky;
+					top: 0;
+				}
+			}
+		}
+
+		tbody {
+			tr {
+				scroll-snap-align: start;
+
+				td.description {
+					text-align: justify;
+				}
+
+				td.actions {
+					display: flex;
+					flex-direction: row;
+					gap: 0.5rem;
+					flex-wrap: wrap;
+
+					button {
+						&[data-action='delete'] {
+							color: var(--color-level-error-border);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* .biome-list {
+	table {
+		position: relative;
+		margin: 0 !important;
+
+		&:not(:has(td)) {
+			&::after {
+				content: 'No biomes found';
+				text-align: center;
+				width: 100%;
+				height: calc(calc(100% - 20px) - 1rem);
+				font-size: large;
+				position: absolute;
+				margin-top: 1rem;
+				top: 50%;
+			}
+		}
+	}
+} */

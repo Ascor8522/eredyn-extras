@@ -13,7 +13,8 @@
 			"field-actor-count": "Number of actors",
 			"button-delete": "Delete biome",
 			"button-edit": "Edit biome",
-			"warning-delete": "Warning, actors part of this biome won't be delete; however, they won't be associated to this biome anymore."
+			"warning-delete": "Warning, actors part of this biome won't be delete; however, they won't be associated to this biome anymore.",
+			"button-view": "View details"
 		},
 		"biome-actors": {
 			"title": "Biome Actors",

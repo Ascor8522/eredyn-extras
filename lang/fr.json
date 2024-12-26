@@ -13,7 +13,8 @@
 			"field-actor-count": "Nombre d'acteurs",
 			"button-delete": "Supprimer le biome",
 			"button-edit": "Modifier le biome",
-			"warning-delete": "Attention, les acteurs faisant partie de ce biome ne seront pas supprimés; cependant, ils ne seront plus associés à ce biome."
+			"warning-delete": "Attention, les acteurs faisant partie de ce biome ne seront pas supprimés; cependant, ils ne seront plus associés à ce biome.",
+			"button-view": "Voir les détails"
 		},
 		"biome-actors": {
 			"title": "Acteurs du biome",
