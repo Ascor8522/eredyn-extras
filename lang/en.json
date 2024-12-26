@@ -1,0 +1,37 @@
+{
+	"EREDYN-EXTRAS": {
+		"biome-list": {
+			"title": "Biomes",
+			"search-placeholder": "Search for biome",
+			"button-create": "Create a biome"
+		},
+		"biome-details": {
+			"title": "Biome",
+			"field-image": "Image",
+			"field-name": "Name",
+			"field-description": "Description",
+			"field-actor-count": "Number of actors",
+			"button-delete": "Delete biome",
+			"button-edit": "Edit biome",
+			"warning-delete": "Warning, actors part of this biome won't be delete; however, they won't be associated to this biome anymore."
+		},
+		"biome-actors": {
+			"title": "Biome Actors",
+			"search-placeholder": "Search for actor",
+			"button-add-actor": "Add an actor",
+			"button-remove-actor": "Remove actor",
+			"button-add-biome": "Add to biome",
+			"button-remove-biome": "Remove from biome"
+		},
+		"column-actions": "Actions",
+		"button-add": "Add",
+		"button-cancel": "Cancel",
+		"button-create": "Create",
+		"button-delete": "Delete",
+		"button-edit": "Edit",
+		"button-no": "No",
+		"button-remove": "Remove",
+		"button-save": "Save",
+		"button-yes": "yes"
+	}
+}

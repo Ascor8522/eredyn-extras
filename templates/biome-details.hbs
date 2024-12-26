@@ -1,0 +1,24 @@
+<form>
+	<h1>{{ localize "EREDYN-EXTRAS.biome-details.title" }} - {{ biome.name }}</h1>
+
+	<div>
+		<label>
+			{{ localize "EREDYN-EXTRAS.biome-details.field-name" }}
+			<input
+				type="text"
+				value={{ biome.name }}
+				{{ readonly true }}
+			/>
+		</label>
+
+		<label>
+			{{ localize "EREDYN-EXTRAS.biome-details.field-description" }}
+			<textarea
+				{{ readonly true }}
+			>
+			{{ biome.description }}
+			</textarea>
+		</label>
+
+	</div>
+</form>

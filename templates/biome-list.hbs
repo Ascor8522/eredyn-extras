@@ -1,0 +1,67 @@
+<form>
+	<h1>{{ localize "EREDYN-EXTRAS.biome-list.title" }}</h1>
+
+	<div>
+		<input
+			type="search"
+			placeholder="🔎 {{ localize 'EREDYN-EXTRAS.biome-list.search-placeholder' }}"
+		/>
+	</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>{{ localize "EREDYN-EXTRAS.biome-details.field-image" }}</th>
+				<th>{{ localize "EREDYN-EXTRAS.biome-details.field-name" }}</th>
+				<th>{{ localize "EREDYN-EXTRAS.biome-details.field-description" }}</th>
+				<th>{{ localize "EREDYN-EXTRAS.biome-details.field-actor-count" }}</th>
+				<th>{{ localize "EREDYN-EXTRAS.column-actions" }}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each biomes}}
+			<tr>
+				<td>
+					{{#if this.image}}
+					<img
+						src="{{ this.image }}"
+						alt="{{ this.name }}"
+					/>
+					{{/if}}
+				</td>
+				<td>{{ this.name }}</td>
+				<td>{{ this.description }}</td>
+				<td>{{ this.actorCount }}</td>
+				<td>
+					<button
+						type="button"
+						data-action="edit"
+						data-id="{{ this.id }}"
+						title="{{ localize 'EREDYN-EXTRAS.biome-details.button-edit'}}"
+					>
+						<i class="fa-solid fa-pen-to-square"></i>
+					</button>
+					<button
+						type="button"
+						data-action="delete"
+						data-id="{{ this.id }}"
+						title="{{ localize 'EREDYN-EXTRAS.biome-details.button-delete' }}"
+					>
+						<i class="fa-solid fa-trash"></i>
+					</button>
+				</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+
+	<div>
+		<button
+			type="button"
+			data-action="create"
+		>
+			<i class="fas fa-plus"></i>
+			{{ localize "EREDYN-EXTRAS.biome-list.button-create" }}
+		</button>
+	</div>
+</form>
